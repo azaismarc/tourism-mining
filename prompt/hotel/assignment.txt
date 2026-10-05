@@ -1,0 +1,33 @@
+You will receive a hotel review and a topic hierarchy. Assign the review to all relevant topics the hierarchy. Then, output the topic labels, assignment reasoning and supporting quotes from the hotel review. DO NOT make up new topics or quotes.  
+
+[Topic Hierarchy]
+{tree}
+
+[Examples]
+Example 1: Assign "[1] Service" and "[1] Room" to the review
+Review: 
+Front desk staff were very friendly and helpful; the bathroom was small and all white.
+
+Your response: 
+[1] Service: Mention the staff’s attitude and promptness. ("Front desk staff were very friendly and helpful...")
+[1] Room: Mention the bathroom size and color. ("...the bathroom was small and all white")
+
+Example 2: Assigned "[1] Service" to the review
+Review: 
+Made us feel very welcome to their property.
+
+Assignment: 
+[1] Service: Mention the staff’s attitude and promptness. ("...feel very welcome to their property")
+
+[Instructions]
+1. Topic labels must be present in the provided topic hierarchy. You MUST NOT make up new topics. 
+2. The quote must be taken from the review. You MUST NOT make up quotes. 
+
+[Review]
+{Document}
+
+Double check that your assignment exists in the hierarchy!
+Your response should be in the following format:
+[Topic Level] Topic Label: Assignment reasoning (Supporting quote)
+
+Your response:

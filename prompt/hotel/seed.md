@@ -1,0 +1,1 @@
+[1] Service: The staff’s attitude and promptness, easiness to problem solving, execution of service in time, or the rooms / check-in / check-out / reception.

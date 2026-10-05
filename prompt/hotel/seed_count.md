@@ -1,0 +1,6 @@
+[1] Service (Count: 0): The staff’s attitude and promptness, easiness to problem solving, execution of service in time, or the rooms / check-in / check-out / reception.
+[1] Room (Count: 0): The rooms in terms of their size, general condition, view, furniture, bathroom, sleep quality and the lack or presence of extra features / amenities.
+[1] Amenities (Count: 0): The rooms in terms of the amenities they include (e.g. air condition, refrigerator, microwave, mini bar, hair dryer, TV, toiletries, safe, balcony, coffee maker, linen).
+[1] Facilities (Count: 0): The hotel facilities in terms of specificinstallations/areas (e.g. swimming pool, spa&sauna, beauty salon, restaurants, café,night club, casino, business center, gymnasium, access facility for the differentlyabled, parking, etc.) or guest services offered by a hotel (e.g. shuttle, laundry, baby sitting or wake up services, sports activities, 24-hour concierge &front desk, information desk, in-room dining, internet access, availability of touristic material)
+[1] Location (Count: 0): The location of the reviewed hotel in terms of its position, the surroundings, the view,
+[1] Breakfast (Count: 0): The breakfast, the food and the drinks in general or in terms of specific dishes and drinks, dining/drinking options.

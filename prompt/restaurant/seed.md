@@ -1,0 +1,1 @@
+[1] Service: The customer / kitchen / counter service, on the promptness and quality of the restaurant’s service in general, the food preparation, the staff’s attitude and professionalism, the wait time, the options offered (e.g.takeout).

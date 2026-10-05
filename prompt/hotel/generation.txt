@@ -1,0 +1,40 @@
+You will receive a hotel review and a set of top-level reviews from a topic hierarchy. Your task is to identify generalizable topics within the hotel review that can act as top-level topics in the hierarchy. If any relevant topics are missing from the provided set, please add them. Otherwise, output the existing top-level topics as identified in the hotel review.
+
+[Top-level topics]
+{Topics}
+
+[Examples]
+Example 1: Adding "[1] Service" and "[1] Room"
+Review: 
+Front desk staff were very friendly and helpful; the bathroom was small and all white.
+
+Your response: 
+[1] Service: The staff’s attitude and promptness, easiness to problem solving, execution of service in time, or the rooms / check-in / check-out / reception.
+[1] Room: The rooms in terms of their size, general condition, view, furniture, bathroom, sleep quality and the lack or presence of extra features/amenities.
+
+Example 2: Duplicate "[1] Service", returning the existing topic
+Review: 
+Made us feel very welcome to their property.
+
+Your response: 
+[1] Service: The staff’s attitude and promptness, easiness to problem solving, execution of service in time, or the rooms / check-in / check-out / reception.
+
+[Instructions]
+Step 1: Determine topics mentioned in the hotel review. 
+- The topic labels must be as GENERALIZABLE as possible. They must not be review-specific.
+- The topics must reflect a SINGLE topic instead of a combination of topics.
+- The new topics must have a level number, a short general label, and a topic description. 
+- The topics must be broad enough to accommodate future subtopics. 
+Step 2: Perform ONE of the following operations: 
+1. If there are already duplicates or relevant topics in the hierarchy, output those topics and stop here. 
+2. If the document contains no topic, return "None". 
+3. Otherwise, add your topic as a top-level topic. Stop here and output the added topic(s). DO NOT add any additional levels.
+
+
+[Review]
+{Document}
+
+Please ONLY return the relevant or modified topics at the top level in the hierarchy. Your response should be in the following format:
+[Topic Level] Topic Label: Topic Description
+
+Your response:

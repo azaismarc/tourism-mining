@@ -1,0 +1,33 @@
+You will receive a restaurant review and a topic hierarchy. Assign the review to all relevant topics the hierarchy. Then, output the topic labels, assignment reasoning and supporting quotes from the restaurant review. DO NOT make up new topics or quotes.  
+
+[Topic Hierarchy]
+{tree}
+
+[Examples]
+Example 1: Assign "[1] Service" and "[1] Food" to the review
+Review: 
+They threw our dishes on the table but the lobster sandwich is good.
+
+Your response: 
+[1] Service: Mention the staff’s attitude. ("They threw our dishes...")
+[1] Food: Mention the sandwich quality. ("...the lobster sandwich is good")
+
+Example 2: Assigned "[1] Service" to the review
+Review: 
+They ignored repeated requests for sugar.
+
+Assignment: 
+[1] Service: Mention the staff’s attitude. ("They ignored repeated requests for sugar")
+
+[Instructions]
+1. Topic labels must be present in the provided topic hierarchy. You MUST NOT make up new topics. 
+2. The quote must be taken from the review. You MUST NOT make up quotes. 
+
+[Review]
+{Document}
+
+Double check that your assignment exists in the hierarchy!
+Your response should be in the following format:
+[Topic Level] Topic Label: Assignment reasoning (Supporting quote)
+
+Your response:
