@@ -3,9 +3,9 @@ import csv
 
 MODELS = ["all-mpnet-base-v2"]
 GUIDES = [
-    # all-mpnet-base-v2
+    "all-mpnet-base-v2",
     "Alibaba-NLP/gte-modernbert-base",
-    #"vahidthegreat/StanceAware-SBERT"
+    "vahidthegreat/StanceAware-SBERT"
 ]
 LOSS = ["gist", "mnrl"]
 LORA = [0, 8, 32]
@@ -35,8 +35,8 @@ for seed in SEEDS:
             continue
 
         # # MNRL only with all-mpnet guide
-        # if loss == "mnrl" and guide != "all-mpnet-base-v2":
-        #     continue
+        if loss == "mnrl" and guide != "all-mpnet-base-v2":
+            continue
 
         # Exclude modernbert configurations
         if "modernbert" in model and loss == "mnrl":

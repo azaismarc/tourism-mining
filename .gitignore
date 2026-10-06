@@ -1,5 +1,7 @@
 .vscode
-fasttext/*
+fasttext
 raw/
 .venv
-training/*
+training
+ir_eval_*
+__pycache__

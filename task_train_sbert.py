@@ -53,7 +53,6 @@ class TaskTrainSBERT(luigi.Task):
     def run(self):
         # Read train and validation datasets
         df_train = pd.read_csv(f'{self.dataset}/train.tsv', delimiter='\t', header=0)
-        #df_val = pd.read_csv(f'{self.dataset}/val.tsv', delimiter='\t', header=0)
 
         
         # Convert text columns to string
