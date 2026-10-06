@@ -73,7 +73,7 @@ We sample 100k English reviews per domain (20k per star rating), split them into
 |---|---|
 | Semantic | dropout-augmented copy of the anchor (SimCSE) |
 | Sentiment | sentence with the same polarity (star ratings as pseudo-labels) |
-| Opinion | sentence with the same polarity and a shared topic (`Llama-3.1-8B-Instruct`, TopicGPT-style prompt) |
+| Opinion | sentence with the same polarity and a shared topic (`Llama-3.1-8B-Instruct`) |
 
 ## Training
 
