@@ -39,7 +39,7 @@ class TaskTrainSBERT(luigi.Task):
 
     sbert = luigi.Parameter(default="intfloat/e5-base-v2")
     guide = luigi.Parameter(default='all-mpnet-base-v2')
-    loss = luigi.ChoiceParameter(choices=['gist','mnrl', 'rand'])
+    loss = luigi.ChoiceParameter(choices=['gist','mnrl'])
     is_lora = luigi.IntParameter(default=0)
     batch = luigi.IntParameter(default=32)
     epoch = luigi.IntParameter(default=3)
@@ -123,8 +123,6 @@ class TaskTrainSBERT(luigi.Task):
             loss = GISTEmbedLoss(model=model, guide=guide, temperature=0.05, margin=self.margin, margin_strategy='relative')
         elif self.loss == 'mnrl':
             loss = MultipleNegativesRankingLoss(model=model, scale=20, similarity_fct=util.cos_sim)
-        elif self.loss == 'rand':
-            self.loss = GISTEmbedRandom(model=model, mask_ratio=0.5, seed=self.seed, temperature=0.05)
 
 
         training_args = SentenceTransformerTrainingArguments(
