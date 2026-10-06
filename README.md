@@ -53,6 +53,7 @@ Download the datasets yourself (not redistributed here) and place the csv files 
 - **Hotel**: [HotelRec](https://github.com/Diego999/HotelRec) → `data/raw/hotel/comment_{1..7}.csv`
 - **Restaurant**: [TripAdvisor Dyadic Context](https://zenodo.org/record/6583422) → `data/raw/restaurant/{Barcelona,London,Madrid,New_Delhi,New_York,Paris}_reviews.csv`
 - **Language ID**: [`lid.176.bin`](https://fasttext.cc/docs/en/language-identification.html) → `data/fasttext/`
+- **Training Data**: [Semantic, Sentiment and Opinion](https://drive.google.com/file/d/1rNDe1PHIXvr1UQcibBedtVz9wMGd7Rdy/view) → `data/training/`
 
 ```text
 .
