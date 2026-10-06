@@ -50,9 +50,18 @@ For gated models (e.g. Llama-3.1-8B-Instruct), set `HUGGINGFACEHUB_API_TOKEN` in
 
 Download the datasets yourself (not redistributed here) and place the csv files as below:
 
+### Full Reproducibility 
+
+The datasets and resources required to reproduce the experiments are listed below.
+
 - **Hotel**: [HotelRec](https://github.com/Diego999/HotelRec) → `data/raw/hotel/comment_{1..7}.csv`
 - **Restaurant**: [TripAdvisor Dyadic Context](https://zenodo.org/record/6583422) → `data/raw/restaurant/{Barcelona,London,Madrid,New_Delhi,New_York,Paris}_reviews.csv`
 - **Language ID**: [`lid.176.bin`](https://fasttext.cc/docs/en/language-identification.html) → `data/fasttext/`
+
+### Preprocessed Training Data
+
+The training data has already been preprocessed and organized into pairs.
+
 - **Training Data**: [Semantic, Sentiment and Opinion](https://drive.google.com/file/d/1rNDe1PHIXvr1UQcibBedtVz9wMGd7Rdy/view) → `data/training/`
 
 ```text
