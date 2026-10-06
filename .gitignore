@@ -1,3 +1,5 @@
 .vscode
-fasttext/
+fasttext/*
 raw/
+.venv
+training/*
